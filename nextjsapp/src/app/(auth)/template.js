@@ -2,6 +2,7 @@
 
 import Link from "next/link"
 import { usePathname } from "next/navigation"
+import { useState } from "react"
 
 // for now css is currently not working as we have to specifically specify to take css as css
 const activecolor ={
@@ -19,6 +20,10 @@ export default function authlayout({children}){
         {name:"forgot-password" , href:"/forgot-password"},
     ]
     const pathname = usePathname()
+
+    const [inputvalue , setinputValue] = useState('')
+    console.log('ii' , inputvalue)
+    // 
     
     return(
         <>
@@ -30,8 +35,8 @@ export default function authlayout({children}){
                         )
                 })
             }
-
             {children}
+            <input type="text" value={inputvalue} onChange={e => setinputValue(e.target.value)} ></input>
         </>
     )
 } 
