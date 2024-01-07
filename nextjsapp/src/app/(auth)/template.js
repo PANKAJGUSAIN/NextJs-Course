@@ -13,7 +13,7 @@ const motactivecolor ={
     textColor:'blue'
 }
 
-export default function authlayout({children}){
+export default function Authlayout({children}){
     const navigationlinks = [
         {name:"Register" , href:"/register"},
         {name:"login" , href:"/login"},
