@@ -1,8 +1,8 @@
 import Link from "next/link";
 
-export default function testme(){
+export default function archived(){
     return <div style={{backgroundColor:'yellowgreen' , width:'50%' , textAlign:'center'}}>
-    Notifications
-    <Link href='/complexDashboard/archived'>Archived</Link>  
+    Archived Notifications
+    <Link href='/complexDashboard'>Default</Link>  
    </div>
 }
