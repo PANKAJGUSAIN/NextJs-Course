@@ -1,5 +1,11 @@
+"use client"
+
 export default function Complexdashlayout(props){
+    console.log(props)
+    const isLoggedIn = false
     return(
+        <>
+        {isLoggedIn ?
         <>
         {props.children}
         <div style={{display:'flex'}}>
@@ -9,6 +15,8 @@ export default function Complexdashlayout(props){
         </div>
         {props.notifications}
         </div>
+        </>
+        :<>{props.login}</>}
         </>
     )
 }
