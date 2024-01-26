@@ -10,10 +10,18 @@ export default function PhotoFeed(){
     }
     return (
         <>
+        if you use the below link "as it is a anchor tag" it will cause a full page refresh so intercepting route won't work
+        <br/>
+        <a href="/photo-feed/2" > Click me </a>
+        <br/>
+        <br/>
+        click on the image to make the intercepting route work as we are using router.push or Link tag
+        <br/>
+        
         <div style={{textAlign:'center' ,marginBottom:'20px'}}>PHOTO FEED</div>
         <div style={{display:'flex' , flexWrap:'wrap' , justifyContent:'left' , margin:'10px'}}>
-        {images.map(i =>{
-            return (<div style={{width:'25%' , height:'50%' , marginBottom:'5px' , cursor:'pointer'}} id={i.id} onClick={()=>handleimageclick(i)}><img src={i.src.src}/></div>)
+        {images.map((i,index) =>{
+            return (<div style={{width:'25%' , height:'50%' , marginBottom:'5px' , cursor:'pointer'}} key={index} id={i.id} onClick={()=>handleimageclick(i)}><img src={i.src.src}/></div>)
         })}
         </div>
         </>
