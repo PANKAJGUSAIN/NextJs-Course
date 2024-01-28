@@ -8,3 +8,22 @@ export async function GET(_response , context){
     const fetchdata = comments.find(comment => comment.id === parseInt(requestcommentid))
     return Response.json(fetchdata)
 }
+
+
+export async function PATCH(request , context){
+     const body = await request.json()
+     const { text } = body
+     const index = comments.findIndex( comment => comment.id === parseInt(context.params.commentid))
+     comments[index].text = text 
+     
+     return new Response(JSON.stringify(comments[index]) , 
+        {
+            headers :{
+                "Content-Type" : "application/json"
+            } , 
+            status : 200
+        }
+     )
+
+}
+
