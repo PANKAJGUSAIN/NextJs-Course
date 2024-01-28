@@ -9,7 +9,7 @@ export default function PhotoFeedid(props){
     return (
         <>
         PHOTO FEED id - {props.params.photoid}
-        <div style={{width:'25%' , height:'50%' , marginBottom:'5px' , cursor:'pointer'}} id={getphotodetail[0].id}><img src={getphotodetail[0].src.src}/></div>
+        <div style={{width:'25%' , height:'50%' , marginBottom:'5px' , cursor:'pointer'}} id={getphotodetail[0].id}><img  src={getphotodetail[0].src.src}/></div>
         </>
     )
 }
