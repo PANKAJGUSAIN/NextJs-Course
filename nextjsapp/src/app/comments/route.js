@@ -2,6 +2,8 @@ import {comments} from './data'
 
 export async function GET(){
     return Response.json(comments)
+    //OR
+    // return new Response(JSON.stringify(comments))
 }
 
 export async function POST(request){
