@@ -27,3 +27,10 @@ export async function PATCH(request , context){
 
 }
 
+
+export async function DELETE(_request , context ){
+    const findcommentindex = comments.findIndex(comment =>comment.id === parseInt(context.params.commentid)) 
+    const deletedComment  = comments[findcommentindex]
+    comments.splice(findcommentindex , 1)
+    return Response.json(deletedComment)
+}
