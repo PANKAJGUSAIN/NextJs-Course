@@ -1,5 +1,11 @@
 # NextJs-Course
 
+# Before we start 
+this project consist of 2 branches 
+[main branch](https://github.com/PANKAJGUSAIN/NextJs-Course/tree/main) - consist of app routing for UI page   
+[RouteHandler_apiroutes](https://github.com/PANKAJGUSAIN/NextJs-Course/tree/RouteHandler_apiroutes) - consist of creating api request GET , POST , PATCH , DELETE
+
+
 ## Getting Started
 
 First, run the development server:
