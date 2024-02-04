@@ -36,5 +36,6 @@ export function middleware(request){
     if(!themePrefer){
         response.cookies.set('theme', 'dark')
     }
+    response.headers.set('custom-header','custom-value')
     return response
 }
