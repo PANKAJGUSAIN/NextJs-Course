@@ -8,7 +8,35 @@ This project consist of 2 branches  :
 
 [RouteHandler_apiroutes](https://github.com/PANKAJGUSAIN/NextJs-Course/tree/RouteHandler_apiroutes) - consist of creating api request GET , POST , PATCH , DELETE .
 
+Learned From http://www.youtube.com/@Codevolution
 
+
+## Part -1 Routing summary 
+Branches for this part -
+
+[main branch](https://github.com/PANKAJGUSAIN/NextJs-Course/tree/main) - app routing for UI page . 
+
+[RouteHandler_apiroutes](https://github.com/PANKAJGUSAIN/NextJs-Course/tree/RouteHandler_apiroutes) - consist of creating api request .
+
+- Routing Definition
+- Page & Layout
+- Dynamic Route
+- Route Groups
+- Linking & navigating
+- Handling errors in routes
+- Advance Routing Concepts - parallel  & intercepting routes
+- RouteHandlers & middleware
+
+## Special files in Nextjs
+- page.js
+- layout.js
+- template.js
+- not-found.js
+- loading.js
+- error.js
+- default.js
+- route.js
+- middleware.js
 
 
 ## Getting Started
